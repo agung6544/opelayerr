@@ -65,8 +65,8 @@ addMarkerButton.addEventListener('click', () => {
     marker.setStyle(
       new Style({
         image: new Icon({
-          src: 'https://w7.pngwing.com/pngs/664/332/png-transparent-spoon-and-fork-logo-eating-computer-icons-spoon-fork-lunch-symbol-restaurant-pitchfork-thumbnail.png',
-          scale: 0.05,
+          src: 'https://png.pngtree.com/png-clipart/20230428/original/pngtree-park-line-icon-png-image_9118726.png',
+          scale: 0.03,
         }),
       })
     );
@@ -125,7 +125,7 @@ function addUserLocationMarker() {
         userMarker.setStyle(
           new Style({
             image: new Icon({
-              src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOlQ3YDl7-HxQXG0WqXzCp0ySumfEcYVJSBw&s', // Ikon untuk pengguna
+              src: 'https://pixsector.com/cache/c95a2c53/ava8daf1a198802ad3efa.png', // Ikon untuk pengguna
               scale: 0.10,
               anchor: [0.5, 1],
             }),
@@ -157,7 +157,7 @@ function addUserLocationMarker() {
           nearestMarker.setStyle(
             new Style({
               image: new Icon({
-                src: 'https://cdn-icons-png.flaticon.com/512/854/854878.png', // Ikon untuk lokasi terdekat
+                src: 'https://pixsector.com/cache/c95a2c53/ava8daf1a198802ad3efa.png', // Ikon untuk lokasi terdekat
                 scale: 0.05,
               }),
             })
@@ -167,8 +167,8 @@ function addUserLocationMarker() {
 
           // Menampilkan notifikasi lokasi terdekat
           Swal.fire({
-            title: "Ayo Tandakan Tempat Makan Di Dekat Anda",
-            text: ``,
+            title: "Ayo Tandakan Taman di dekat Anda!",
+            text: `Lokasi Anda: Longitude: ${userCoordinates[0]}, Latitude: ${userCoordinates[1]}`,
             icon: "info",
           });
         }
